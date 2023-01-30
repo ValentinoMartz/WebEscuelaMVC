@@ -7,9 +7,6 @@ namespace WebEscuelaMVC.Models
     public class Aula
     {
 
-//        Programar una validación personalizada en la propiedad Número.
-//El número ingresado debe ser mayor a 100 
-//Configurar el ErrorMessage “El número debe ser mayor a 100”
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Numero es obligatorio")]

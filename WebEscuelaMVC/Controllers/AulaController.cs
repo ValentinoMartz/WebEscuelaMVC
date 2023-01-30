@@ -25,14 +25,14 @@ namespace WebEscuelaMVC.Controllers
         }
 
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Register()
         {
             Aula aula = new Aula();
             return View("Register", aula);
         }
 
         [HttpPost]
-        public ActionResult Create(Aula aula)
+        public ActionResult Register(Aula aula)
         {
             if (ModelState.IsValid)
             {
@@ -53,7 +53,7 @@ namespace WebEscuelaMVC.Controllers
             }
             else
             {
-                return View("Detalle", aula);
+                return View("Details", aula);
             }
         }
 
