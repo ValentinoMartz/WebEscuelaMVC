@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/main.css" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Proyecto MVC Escuela</h1>
+    </div>
+
+    <div id="main">
+        <aside id="sidebar1">
+            @if (IsSectionDefined("SideBar"))
+            {
+                @RenderSection("SideBar")
+            }
+            else
+            {
+                <p>
+                    La "Escuela MVC" es el centro
+                    pediátrico de referencia en salud pública, gratuita
+                    y de alta complejidad de la Argentina.
+                </p>
+            }
+        </aside>
+        <div class="content">
+            @RenderBody()
+        </div>
+       
+    </div>
+
+    <div id="footer">
+        <h2>Bootcamp Accenture 2023</h2>
+    </div>
+</body>
+</html>
+

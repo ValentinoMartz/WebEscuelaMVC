@@ -1,14 +1,16 @@
-﻿
-<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Index Home";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <h2>@ViewBag.Nombre</h2>
-    <h3>@ViewBag.Fecha</h3>
-    @Html.ActionLink("Ir a escuela", "Index", "Aula")
-</body>
-</html>
+
+<h2>@ViewBag.Nombre</h2>
+<h3>@ViewBag.Fecha</h3>
+@Html.ActionLink("Ir a aulas :D", "Index", "Aula")
+
+@section SideBar
+    {
+    <img src="./css/imgs/1.jpg" alt="imagen de una escuela" />
+    <img src="./css/imgs/2.jpg" alt="imagen de una escuela" />
+    <img src="./css/imgs/3.jpg" alt="imagen de una escuela" />
+  
+}

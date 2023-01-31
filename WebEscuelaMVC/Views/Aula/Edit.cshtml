@@ -1,14 +1,10 @@
 ﻿@model WebEscuelaMVC.Models.Aula
 
 
-<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Editar Aula";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Edit</title>
-</head>
-<body>
       <h1>Editar los datos del aula</h1>
     @using (Html.BeginForm("Edit", "Aula", FormMethod.Post))
     {
@@ -27,5 +23,4 @@
         <input type="submit" action="Edit" />
         @Html.ActionLink("Volver al Index", "Index", "Aula")
     }
-</body>
-</html>
+
